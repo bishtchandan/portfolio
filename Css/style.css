@@ -277,6 +277,9 @@
     font-size: 6rem;
     font-weight: bold;
   }
+  .home p{
+    color: #eee;
+  }
 
 /* About section */
 
