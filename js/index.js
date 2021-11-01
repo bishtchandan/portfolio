@@ -1,16 +1,16 @@
-const login = document.querySelector('.login-form')
-const loginBtn = document.getElementById('loginBtn');
+// const login = document.querySelector('.login-form')
+// const loginBtn = document.getElementById('loginBtn');
 
-loginBtn.addEventListener('click', () => {
-    login.classList.toggle('active');
-})
+// loginBtn.addEventListener('click', () => {
+//     login.classList.toggle('active');
+// })
 
-const searchForm = document.querySelector('.search-form');
-const searchBtn = document.getElementById('search-btn');
+// const searchForm = document.querySelector('.search-form');
+// const searchBtn = document.getElementById('search-btn');
 
-searchBtn.addEventListener('click', () =>{
-    searchForm.classList.toggle('active');
-})
+// searchBtn.addEventListener('click', () =>{
+//     searchForm.classList.toggle('active');
+// })
 
 
 const navbar = document.querySelector('.navbar');

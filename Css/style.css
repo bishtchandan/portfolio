@@ -313,6 +313,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: 20rem;
     width: 30rem;
     border: 2px solid #111;
@@ -605,6 +606,7 @@
     width: 30rem;
     box-shadow: var(--box-shadow);
     background: #fff;
+    margin: 0;
   }
   .header .navbar.active {
     right: 2rem;
@@ -665,6 +667,9 @@
     height: 15rem;
     width: 20rem;
     margin-right: -3rem;
+  }
+  .about-box-1 p{
+    font-size: 1rem;
   }
   .about-box-2{
     height: 15rem;
