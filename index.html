@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,197 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="Css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script defer src="js/index.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
+
 <body>
-<!-- header section starts here -->
+    <!-- header section starts here -->
     <header class="header">
-        <a href="" class="logo">Portfolio</a>
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#review">Review</a>
-            <a href="#contact">Contact us</a>
-        </nav>
-    <!-- login section starts here -->
         <div class="icons">
-            <div class="fas fa-bars" id="menu-bar"></div>
-            <div class="fas fa-user" id="login-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
         </div>
-    <!-- login section ends here -->
+
+        <!-- logo section starts here -->
+
+        <div class="logo-section">
+            <a href="" class="logo">Portfolio </a>
+            <div class="empty"></div>
+        </div>
+
+        <!-- logo section ends here -->
+
+
+        <!-- navbar section starts here -->
+        <nav class="navbar">
+            <ul>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="">Contact</a>
+            </ul>
+        </nav>
+        <!-- navbar section ends here -->
+
+        <!-- Icon section starts here -->
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-user" id="loginBtn"></div>
+        </div>
+        <!-- Icon section starts here -->
+
+        <!-- search form section starts here -->
+        <div id="searching-form">
+            <form action="" class="searching-form">
+                <input type="search" id="seacrhing-box" class="box" placeholder="search...">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+        </div>
+        <form action="" class="search-form">
+            <input type="search" id="seacrh-box" class="box" placeholder="search...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <!-- search form section ends here -->
+
+        <!-- Login section starts here -->
+        <form action="" class="login-form">
+            <h2>Login</h2>
+            <input required type="email" placeholder="Enter your email" class="box">
+            <input required type="password" placeholder="Enter your passward" class="box">
+            <p>forget passward <a href="">click here</a></p>
+            <p>don't have account <a href="">create now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+        <!-- Login section ends here -->
+
     </header>
-<!-- header section ends here -->
+    <!-- header section ends here -->
+
+    <!-- home section starts here -->
+    <section class="home" id="home">
+        <h1>Welcome to my <span>Porfolio</span> <br> website</h1>
+        <p>hi I am avilable here any time for web development real time project. <br> I can create responsive design using
+            <span>HTML Css and JavaScript</span> <br> so that i can increase my experience to related field.</p>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- About section starts here -->
+        <section class="about" id="about">
+            <h2>About</h2>
+            <div class="about-box">
+                <div class="about-leftbox">
+                    <div class="about-box-1">
+                        <h3>About me</h3>
+                        <p>hi i am Chandan Singh Bisht<br> from Uttarakhand</p>
+                    </div>
+                    <div class="about-box-2">
+                        <h3>Hobbies</h3>
+                        <a href="">Listen Music</a>
+                        <a href="">Watcing Movies</a>
+                    </div>
+                </div>
+                <div class="about-box-3">
+                    <img src="img/bg.jpg" alt="">
+                </div>
+                <div class="about-rightbox">
+                    <div class="about-box-4">
+                        <h3>Educational</h3>
+                        <a href="">High School - 2015</a>
+                        <a href="">Intermediate - 2017</a>
+                        <a href="">Graduation -2020</a>
+                    </div>
+                    <div class="about-box-5">
+                        <h3>Additional</h3>
+                        <a href="">NCC</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- About section ends here -->
+
+    <!-- skills section starts here -->
+        <section class="skills" id="skills">
+            <h2>Skills</h2>
+            <div class="skills-box">
+                <div class="skills-leftbox">
+                    <div class="skills-box-1">
+                        <h3><span>HTML</span></h3>
+                    </div>
+                    <div class="skills-box-2">
+                        <h3><span>CSS</span></h3>
+                    </div>
+                </div>
+                <div class="skills-box-3">
+                    <img src="img/bg1.png" alt="">
+                </div>
+                <div class="skills-rightbox">
+                    <div class="skills-box-4">
+                        <h3><span>JavaScript</span></h3>
+                    </div>
+                    <div class="skills-box-5">
+                        <h3>Learning <span> Reactjs</span></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- skills section ends here -->
+
+    <!-- project section starts here -->
+        <div class="project">
+            <h2>Projects</h2>
+        </div>
+        <section class="projects" id="projects">
+
+    <div class="swiper projects-slider">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide box">
+          <img src="img/project1.png" alt="">
+          <h3>Learn With Passion</h3>
+          <a href="https://bishtchandan.github.io/learn-with-passion/" class="btn">learn-with passion</a>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="img/project2.png" alt="">
+          <h3>Clock Website</h3>
+          <a href="https://bishtchandan.github.io/clock/" class="btn">clock</a>
+        </div>
+        <div class="swiper-slide box">
+          <img src="img/project3.png" alt="">
+          <h3>Food Website</h3>
+          <a href="https://bishtchandan.github.io/Meal/" class="btn">Food-Website</a>
+        </div>
+        <div class="swiper-slide box">
+          <img src="img/project4.png" alt="">
+          <h3>Gaming-car</h3>
+          <a href="https://bishtchandan.github.io/gaming-car/" class="btn">Gaming-car</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+    <!-- project section ends here -->
+
+    <!-- contact section starts here -->
+        <div class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <p>hi you can contact me by anyone of them.</p>
+            <div class="icons">
+                <div class="fab fa-instagram"></div>
+                <div class="fab fa-facebook"></div>
+                <div class="fas fa-at"></div>
+                <div class="far fa-address-book"></div>
+                <div class="fab fa-twitter"></div>
+                <div class="fab fa-linkedin"></div>
+            </div>
+        </div>
+    <!-- contact section ends here -->
+
 </body>
+
 </html>
